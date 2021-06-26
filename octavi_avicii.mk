@@ -23,15 +23,19 @@ $(call inherit-product, device/oneplus/avicii/device.mk)
 
 # Inherit some common Octavi stuff.
 $(call inherit-product, vendor/octavi/config/common_full_phone.mk)
+# Inherit some common OctaviOS stuff
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SCREEN_DENSITY := 420
+TARGET_GAPPS_ARCH := arm64
 
-
-
+# Octavi Properties
 PRODUCT_NAME := octavi_avicii
 PRODUCT_DEVICE := avicii
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := AC2001
 CUSTOM_DEVICE := Nord
+WITH_GAPPS := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 

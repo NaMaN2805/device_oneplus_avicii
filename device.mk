@@ -188,12 +188,18 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     RemovePackages
 
+# Soong
+PRODUCT_BOARD_PLATFORM := sm7250
+PRODUCT_USES_QCOM_HARDWARE := true
+
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     device/oneplus/common \
     vendor/qcom/opensource/commonsys/packages/apps/Bluetooth \
     vendor/qcom/opensource/commonsys/system/bt/conf
+	hardware/qcom-caf/sm7250
 
 # Telephony
 PRODUCT_PACKAGES += \
