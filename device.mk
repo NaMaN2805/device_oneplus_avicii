@@ -199,7 +199,7 @@ PRODUCT_SOONG_NAMESPACES += \
     device/oneplus/common \
     vendor/qcom/opensource/commonsys/packages/apps/Bluetooth \
     vendor/qcom/opensource/commonsys/system/bt/conf
-	hardware/qcom-caf/sm7250
+	
 
 # Telephony
 PRODUCT_PACKAGES += \
